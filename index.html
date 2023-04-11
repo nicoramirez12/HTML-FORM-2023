@@ -15,57 +15,56 @@
 </head>
 
 <body>
-<div class="container fluid border border-subtle">
-    <nav class="navbar navbar-expand bg-body-tertiary">
-        <div class="container-fluid">
-            <h1 class="navbar-brand">Payment form example</h1>
-        </div>
-    </nav>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="alert alert-danger text-danger">Some fields are missing    
+    <div class="container fluid border border-subtle">
+        <nav class="navbar navbar-expand bg-body-tertiary">
+            <div class="container-fluid">
+                <h1 class="navbar-brand">Payment form example</h1>
+            </div>
+        </nav>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-danger text-danger">
+                        Some fields are missing    
+                    </div>
                 </div>
             </div>
-        </div>
 
-    <div class="row">
-        <div class="col-md-6">
-            <label for="exampleFormControlTextarea1" class="form-label">Card #</label>
-                  <textarea class="form-control text-secondary" id="exampleFormControlTextarea1"
-                    rows="1">XXXXXXXXXXXXXXXXXXX</textarea>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="exampleFormControlTextarea1" class="form-label">Card #</label>
+                <textarea class="form-control text-secondary" id="exampleFormControlTextarea1" rows="1">
+                    XXXXXXXXXXXXXXXXXXX
+                </textarea>
+            </div>
+            <div class="col-md-2">
+                <label for="exampleFormControlTextarea2" class="form-label">CVC #</label>
+                <textarea class="form-control text-secondary" id="exampleFormControlTextarea2" rows="1">
+                        00000
+                </textarea>
+            </div>
+            <div class="col-md-4">
+                <label for="exampleFormControlTextarea2" class="form-label">Amount</label>
+                <textarea class="form-control text-secondary" id="exampleFormControlTextarea2"
+                        rows="1">$ Amount</textarea>
+            </div>
         </div>
-        <div class="col-md-2">
-            <label for="exampleFormControlTextarea2" class="form-label">CVC #</label>
-                  <textarea class="form-control text-secondary" id="exampleFormControlTextarea2"
-                    rows="1">00000</textarea>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="exampleFormControlTextarea4" class="form-label">First name</label>
+                <textarea class="form-control text-secondary" id="exampleFormControlTextarea4"rows="1"></textarea>
+            </div>
+            <div class="col-md-6">
+                <label for="exampleFormControlTextarea5" class="form-label">Last name</label>
+                <textarea class="form-control text-secondary" id="exampleFormControlTextarea5" rows="1"></textarea>
+            </div>
         </div>
-        <div class="col-md-4">
-            <label for="exampleFormControlTextarea2" class="form-label">Amount</label>
-            <textarea class="form-control text-secondary" id="exampleFormControlTextarea2"
-                    rows="1">$ Amount</textarea>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <label for="exampleFormControlTextarea4" class="form-label">First name</label>
-                  <textarea class="form-control text-secondary" id="exampleFormControlTextarea4"
-                    rows="1"></textarea>
-        </div>
-        <div class="col-md-6">
-            <label for="exampleFormControlTextarea5" class="form-label">Last name</label>
-                  <textarea class="form-control text-secondary" id="exampleFormControlTextarea5"
-                    rows="1"></textarea>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <label for="exampleFormControlTextarea6" class="form-label">City</label>
-                  <textarea class="form-control text-secondary" id="exampleFormControlTextarea6"
-                    rows="1"></textarea>
-
-        </div>
-        <div class="col-md-3">
-            <label for="inputState" class="form-label">State</label>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="exampleFormControlTextarea6" class="form-label">City</label>
+                <textarea class="form-control text-secondary" id="exampleFormControlTextarea6" rows="1"></textarea>
+            </div>
+            <div class="col-md-3">
+                <label for="inputState" class="form-label">State</label>
                 <select id="inputState" class="form-select">Pick a state
                     <option selected>Pick a state</option>
                     <option>Alabama</option>
@@ -73,41 +72,36 @@
                     <option>Arizona</option>
                     <option>Arkansas</option>
                 </select>
-        </div>
-
-        <div class="col-md-3">
-            <label for="exampleFormControlTextarea7" class="form-label">Postal Code</label>
-                    <textarea class="form-control text-secondary" id="exampleFormControlTextarea7"
-                    rows="1"></textarea>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-6">
-            <label for="exampleFormControlTextarea6" class="form-label">We accept:</label>
-            <div class="max-width: 100%; p-3 container-fluid rounded bg-body-tertiary">
-                <input type="radio" name="creditcards" value="Mastercard" /><i class="fa-brands fa-cc-mastercard"></i>
-                <input type="radio" name="creditcards" value="VISA" /><i class="fa-brands fa-cc-visa"></i>
-                <input type="radio" name="creditcards" value="CC-diners-club" /><i class="fa-brands fa-cc-diners-club"></i>
-                <input type="radio" name="creditcards" value="Amex" /><i class="fa-brands fa-cc-amex"></i>
+            </div>
+            <div class="col-md-3">
+                <label for="exampleFormControlTextarea7" class="form-label">Postal Code</label>
+                <textarea class="form-control text-secondary" id="exampleFormControlTextarea7" rows="1"></textarea>
             </div>
         </div>
-
-        <div class="col-6">
-            <label for="exampleFormControlTextarea6" class="form-label">Message</label>
-                  <textarea class="form-control text-secondary" id="exampleFormControlTextarea6"
-                    rows="3"></textarea>
-                    <label for="exampleFormControlTextarea6" class="form-label text-secondary">Add any notes here.</label>
-        </div>
-
-    </div>
-    <nav class="navbar navbar-expand bg-body-tertiary">
-        <div class="container-fluid d-flex flex-row-reverse">
-            <div class="footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="footer">Cancel</button>
-                <button type="button" class="btn btn-primary">Send</button>
+        <div class="row">
+            <div class="col-6">
+                <label for="exampleFormControlTextarea6" class="form-label">We accept:</label>
+                <div class="max-width: 100%; p-3 container-fluid rounded bg-body-tertiary">
+                    <input type="radio" name="creditcards" value="Mastercard" /><i class="fa-brands fa-cc-mastercard"></i>
+                    <input type="radio" name="creditcards" value="VISA" /><i class="fa-brands fa-cc-visa"></i>
+                    <input type="radio" name="creditcards" value="CC-diners-club" /><i class="fa-brands fa-cc-diners-club"></i>
+                    <input type="radio" name="creditcards" value="Amex" /><i class="fa-brands fa-cc-amex"></i>
+                </div>
+            </div>
+            <div class="col-6">
+                <label for="exampleFormControlTextarea6" class="form-label">Message</label>
+                <textarea class="form-control text-secondary" id="exampleFormControlTextarea6" rows="3"></textarea>
+                <label for="exampleFormControlTextarea6" class="form-label text-secondary">Add any notes here.</label>
             </div>
         </div>
-    </nav>
-</div>
+        <nav class="navbar navbar-expand bg-body-tertiary">
+            <div class="container-fluid d-flex flex-row-reverse">
+                <div class="footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="footer">Cancel</button>
+                    <button type="button" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </nav>
+    </div>
 </body>
 </html>
